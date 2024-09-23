@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
 const getData = async (userData) => {
     try {
 
-        const res = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${userData}&limit=5&appid=4c8f69fefb32bd67bb8aab2f17c32ebf`);
+        const res = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${userData}&limit=5&appid={Your_ID}`);
 
         for (let datas in res.data) {
 
@@ -43,7 +43,7 @@ const getData = async (userData) => {
 const getWeatherInfo = async (name, country, state, lat, lon) => {
 
     try {
-        const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${lon}&appid=4c8f69fefb32bd67bb8aab2f17c32ebf`);
+        const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${lon}&appid={Your_ID}`);
         await dataPosting(name, country, state, res.data.main.temp, res.data.main.feels_like, res.data.main.temp_max, res.data.main.temp_min, res.data.main.humidity);
 
     }

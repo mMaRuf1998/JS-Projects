@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: cornflowerblue;
+
+}
+
+.heading {
+    margin: 50px;
+}
+
+input {
+    min-width: 350px;
+    min-height: 40px;
+}
+
+button {
+    height: 40px;
+}
+
+
+
+.container {
+    display: block;
+    display: flex;
+
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 350px;
+
+}
+
+.card-body {
+    padding-right: 40px;
+
+}
+
+li {
+    list-style: none;
+}

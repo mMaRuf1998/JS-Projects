@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+
+}
+
+.container {
+    display: block;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 50px 10px;
+    text-align: center;
+    width: 500px;
+
+}
+
+.card-body {
+    padding-right: 40px;
+
+}
+
+li {
+    list-style: none;
+}
